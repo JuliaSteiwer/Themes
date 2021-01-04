@@ -124,6 +124,7 @@ Note:
     <meta name="if:Show Tags" content="1"/>
     <!-- Accessibility -->
     <meta name="if:Custom Colored Text" content="1"/>
+    <meta name="if:Custom Controls" content="1"/>
     <meta name="if:Italics" content="1"/>
     <meta name="if:Serif Fonts" content="1"/>
     <!-- Custom Links -->
@@ -1354,6 +1355,7 @@ Note:
                 display:none!important;
             }
             
+            {block:IfCustomControls}
             /* Hides standard tumblr controls */
             body > iframe:first-child {
                 display: none !important;
@@ -1371,6 +1373,7 @@ Note:
                 justify-content:space-between;
                 flex-wrap:wrap;
             }
+            {/block:IfCustomControls}
             
             /* Control Element */
             .cont{
